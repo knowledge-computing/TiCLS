@@ -36,16 +36,7 @@ python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 4
 ```
 python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only MODEL.WEIGHTS ${MODEL_PATH}
 ```
-## Citation
 
-```bibtex
-@inproceedings{TBD,
-  title     = {TiCLS: Tightly Coupled Language Text Spotter},
-  author    = {Jang, Leeje and Lin, Yijun and Chiang, Yao-Yi and Weinman, Jerod},
-  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-  year      = {2026}
-}
-```
 
 ## To-Do List 
 - [ ] Release pretrained and fine-tuned TiCLS model weights
