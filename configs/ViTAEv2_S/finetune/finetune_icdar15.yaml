@@ -1,0 +1,47 @@
+_BASE_: "../Base_det.yaml"
+
+MODEL:
+  WEIGHTS: "model_weights/pretrained_ic15.pth"
+  ViTAEv2:
+    DROP_PATH_RATE: 0.2
+  TRANSFORMER:
+    INFERENCE_TH_TEST: 0.3
+    VOC_SIZE: 194
+    NUM_POINTS: 25
+    LOSS:
+      BEZIER_SAMPLE_POINTS : 25
+      POINT_COORD_WEIGHT : 1.0
+      POINT_LM_WEIGHT : 6.0
+  BATEXT:
+    CANONICAL_SIZE: 194
+    VOC_SIZE: 194
+    NUM_CHARS: 25
+
+DATASETS:
+  TRAIN: ("icdar2015_train",)
+  TEST: ("ic15_test" ,) 
+
+INPUT:
+  MIN_SIZE_TRAIN: (800,900,1000,1100,1200,1300,1400)
+  MAX_SIZE_TRAIN: 3000
+  MIN_SIZE_TEST: 1440
+  MAX_SIZE_TEST: 3000
+  CROP:
+    ENABLED: False
+  ROTATE: False
+
+SOLVER:
+  IMS_PER_BATCH: 2
+  BASE_LR: 1e-5
+  LR_BACKBONE: 1e-5
+  WARMUP_ITERS: 0
+  STEPS: (10000,)
+  MAX_ITER: 20000
+  CHECKPOINT_PERIOD: 1000
+
+TEST:
+  EVAL_PERIOD: 1000
+  # # 1 - Generic, 2 - Weak, 3 - Strong (for icdar2015)
+  LEXICON_TYPE: 3
+
+OUTPUT_DIR: "outputs/finetune-ic15/"
