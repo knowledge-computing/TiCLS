@@ -36,3 +36,10 @@ python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 4
 ```
 python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only MODEL.WEIGHTS ${MODEL_PATH}
 ```
+
+
+## To-Do List 
+
+- [ ] Release TiCLS pretrained/finetuned weights  
+- [ ] Release a PLM model weight  
+- [ ] Release Dataset information
