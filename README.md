@@ -45,6 +45,7 @@ python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only 
   booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
   year      = {2026}
 }
+```
 
 ## To-Do List 
 
