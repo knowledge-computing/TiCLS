@@ -39,7 +39,7 @@ python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only 
 ## Citation
 
 ```bibtex
-@inproceedings{jang2026ticls,
+@inproceedings{TBD,
   title     = {TiCLS: Tightly Coupled Language Text Spotter},
   author    = {Jang, Leeje and Lin, Yijun and Chiang, Yao-Yi and Weinman, Jerod},
   booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
