@@ -41,13 +41,11 @@ python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only 
 ### Train PLM
 ```
 python plm_train/pretrain_LM_for_scenetext.py
-
 ```
 
 ### Get PLM-decoder only for TiCLS
 ```
 python plm_train/get_decoder_from_PLM.py
-
 ```
 
 ## Dataset
