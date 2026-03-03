@@ -50,9 +50,11 @@ python plm_train/get_decoder_from_PLM.py
 
 ## Dataset
 ### PLM Dataset
-- PLM tokenizer : [Download URL](https://drive.google.com/drive/folders/160uSNy0_UpBR6-NVn_1PKPZTdwaDb0xy?usp=drive_link)
-- PLM train dataset : [Download URL](https://drive.google.com/file/d/1I_xR6omIMgvzn4YBB6EQmXQwdikkOKVm/view?usp=drive_link)
-- PLM test dataset : [Download URL](https://drive.google.com/file/d/10uxsdOpAsua7uHIbWHVmsrB8Xlx23X4Y/view?usp=drive_link)
+| Component            | Download URL |
+|----------------------|-------------|
+| PLM Tokenizer        | [Download URL](https://drive.google.com/drive/folders/160uSNy0_UpBR6-NVn_1PKPZTdwaDb0xy?usp=drive_link) |
+| PLM Train Dataset    | [Download URL](https://drive.google.com/file/d/1I_xR6omIMgvzn4YBB6EQmXQwdikkOKVm/view?usp=drive_link) |
+| PLM Test Dataset     | [Download URL](https://drive.google.com/file/d/10uxsdOpAsua7uHIbWHVmsrB8Xlx23X4Y/view?usp=drive_link) |
 
 ## To-Do List 
 - [ ] Release pretrained and fine-tuned TiCLS model weights
