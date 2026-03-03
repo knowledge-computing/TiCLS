@@ -47,6 +47,13 @@ python plm_train/pretrain_LM_for_scenetext.py
 ```
 python plm_train/get_decoder_from_PLM.py
 ```
+## Model Weights
+
+### PLM Weights
+| Component            | Download URL |
+|----------------------|-------------|
+| PLM (Encoder&Decoder)    | [Download PLM Weights](https://drive.google.com/file/d/1hRItsRE2gT3FwBaQNzqrZDksb3ORJZaU/view?usp=drive_link) |
+| PLM Decoder for TiCLS   | [Download PLM Decoder Weights](https://drive.google.com/file/d/1asBTIUrhkq0QoknvxaE4vNmZ0Q-2X-Or/view?usp=drive_link) |
 
 ## Dataset
 ### TiCLS Dataset
@@ -66,5 +73,5 @@ For downloading the dataset required to train TiCLS, please refer to the [DeepSo
 
 ## To-Do List 
 - [ ] Release pretrained and fine-tuned TiCLS model weights
-- [ ] Release pretrained PLM model weights 
+- [x] Release pretrained PLM model weights and scripts for training 
 - [x] Release detailed dataset information for TiCLS and PLM
