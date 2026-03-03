@@ -26,17 +26,35 @@ python setup.py build develop
 ```
 
 
-## How to Run
+## How to Run TiCLS
 
 ### Train
 ```
 python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 4
 ```
-### Evaluation
+### Evaluate
 ```
 python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only MODEL.WEIGHTS ${MODEL_PATH}
 ```
 
+## How to Run PLM 
+### Train PLM
+```
+python plm_train/pretrain_LM_for_scenetext.py
+
+```
+
+### Get PLM-decoder only for TiCLS
+```
+python plm_train/get_decoder_from_PLM.py
+
+```
+
+## Dataset
+### PLM Dataset
+- PLM tokenizer : [Download URL](https://drive.google.com/drive/folders/160uSNy0_UpBR6-NVn_1PKPZTdwaDb0xy?usp=drive_link)
+- PLM train dataset : [Download URL](https://drive.google.com/file/d/1I_xR6omIMgvzn4YBB6EQmXQwdikkOKVm/view?usp=drive_link)
+- PLM test dataset : [Download URL](https://drive.google.com/file/d/10uxsdOpAsua7uHIbWHVmsrB8Xlx23X4Y/view?usp=drive_link)
 
 ## To-Do List 
 - [ ] Release pretrained and fine-tuned TiCLS model weights
