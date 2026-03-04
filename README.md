@@ -51,7 +51,7 @@ python plm_train/get_decoder_from_PLM.py
 ### TiCLS Weights
 
 | Dataset            | Pretrain/Finetune | Download URL |
-|----------------------|-------------|
+|----------------------|-------------|-------------|
 | ICDAR 2015    | Pretrain  | [Download Weights](https://drive.google.com/file/d/1ei_vrvuAnmLZPZ_-yEToRdtoGpgEr8R5/view?usp=drive_link) |
 | ICDAR 2015    | Finetune  | [Download Weights](https://drive.google.com/file/d/16sTq5nC_YvFYDXJlzp07dMoGYTMU4T7Y/view?usp=drive_link) |
 | TotalText     | Pretrain  | [Download Weights](https://drive.google.com/file/d/1da8HaaVaCIqnJycc4_Y6D6S3GQ9ic1Tl/view?usp=drive_link) |
