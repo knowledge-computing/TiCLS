@@ -1,4 +1,4 @@
-# Official Code for TiCLS: Tightly Coupled Language Text Spotter
+# TiCLS: Tightly Coupled Language Text Spotter
 
 ## News
 - TiCLS has been accepted to WACV 2026! ([arXiv](https://arxiv.org/abs/2602.04030))
