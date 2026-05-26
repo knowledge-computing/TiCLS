@@ -83,7 +83,7 @@ python plm_train/get_decoder_from_PLM.py
 ```
 ### Step 3. Pretrain TiCLS (Spotter)
 ```
-# Before training TiCLS, please make sure to correctly place the PLM (Step 1) and its decoder weight (Step 2) under ./adet/modeling/model/language.py 
+# Before training TiCLS, please make sure to correctly place the PLM weight (from Step 1) and its decoder weight (from Step 2) under ./adet/modeling/model/language.py 
 python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 4
 ```
 ### Step 4. Finetune TiCLS (Spotter)  
