@@ -71,7 +71,7 @@ python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 4
 python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only MODEL.WEIGHTS ${MODEL_PATH}
 ```
 
-## How to Run TiCLS from Scratch 
+## How to Run TiCLS from *Scratch* 
 We provide implementation details for training TiCLS from scratch.  
 ### Step 1. Pretrain LM (Encoder and decoder)
 ```
