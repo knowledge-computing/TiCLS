@@ -25,28 +25,6 @@ pip install transformers==4.46.3
 python setup.py build develop
 ```
 
-
-## How to Run TiCLS
-
-### Train
-```
-python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 4
-```
-### Evaluate
-```
-python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only MODEL.WEIGHTS ${MODEL_PATH}
-```
-
-## How to Run PLM 
-### Train PLM
-```
-python plm_train/pretrain_LM_for_scenetext.py
-```
-
-### Get PLM-decoder only for TiCLS
-```
-python plm_train/get_decoder_from_PLM.py
-```
 ## Model Weights
 ### TiCLS Weights
 
@@ -79,4 +57,39 @@ For downloading the dataset required to train TiCLS, please refer to the [DeepSo
 | PLM Tokenizer        | [Download Tokenizer](https://drive.google.com/drive/folders/160uSNy0_UpBR6-NVn_1PKPZTdwaDb0xy?usp=drive_link) |
 | PLM Train Dataset    | [Download Train](https://drive.google.com/file/d/1I_xR6omIMgvzn4YBB6EQmXQwdikkOKVm/view?usp=drive_link) |
 | PLM Test Dataset     | [Download Test](https://drive.google.com/file/d/10uxsdOpAsua7uHIbWHVmsrB8Xlx23X4Y/view?usp=drive_link) |
+
+
+
+## How to Run TiCLS 
+
+### Train
+```
+python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 4
+```
+### Evaluate
+```
+python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only MODEL.WEIGHTS ${MODEL_PATH}
+```
+
+## How to Run TiCLS from Scratch 
+We provide implementation details for training TiCLS from scratch.  
+### Step 1. Pretrain LM (Encoder and decoder)
+```
+python plm_train/pretrain_LM_for_scenetext.py
+```
+### Step 2. Detach PLM decoder for spotter initialization
+```
+python plm_train/get_decoder_from_PLM.py
+```
+### Step 3. Pretrain Spotter 
+```
+# Before training TiCLS, please make sure to correctly place the PLM (Step 1) and its decoder weight (Step 2) under ./adet/modeling/model/language.py 
+python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 4
+```
+### Step 4. Finetune Spotter 
+```
+python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only MODEL.WEIGHTS ${MODEL_PATH}
+```
+
+### Get PLM-decoder only for TiCLS
 
