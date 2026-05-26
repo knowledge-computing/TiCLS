@@ -66,11 +66,12 @@ python plm_train/get_decoder_from_PLM.py
 ## Dataset
 ### TiCLS Dataset
 
-For downloading the dataset required to train TiCLS, please refer to the [DeepSolo repository](https://github.com/ViTAE-Transformer/DeepSolo/blob/main/DeepSolo/README.md). We provide the corresponding annotation files (.json) below for training TiCLS.
+For downloading the dataset required to train TiCLS, please refer to the [DeepSolo repository](https://github.com/ViTAE-Transformer/DeepSolo/blob/main/DeepSolo/README.md). We provide the corresponding annotation files (.json) below for training TiCLS. For evaluation, please unzip the file below and place it under "./datasets". 
 
-| Component            | Download URL |
+| Annotations            | Download URL |
 |----------------------|-------------|
-| Annotations    | [Download Annotations](https://drive.google.com/file/d/1rq3sWh2NxcQOh6wCjUDTl3OoL5OiLwQi/view?usp=sharing) |
+| Training  | [Download Annotations](https://drive.google.com/file/d/1rq3sWh2NxcQOh6wCjUDTl3OoL5OiLwQi/view?usp=sharing) |
+| Evaluation  | [Download Annotations](https://drive.google.com/file/d/1HaMVPxx0CzGIGKGqerZtYcoBMfHIP9PM/view?usp=drive_link) |
 
 ### PLM Dataset
 | Component            | Download URL |
@@ -79,7 +80,3 @@ For downloading the dataset required to train TiCLS, please refer to the [DeepSo
 | PLM Train Dataset    | [Download Train](https://drive.google.com/file/d/1I_xR6omIMgvzn4YBB6EQmXQwdikkOKVm/view?usp=drive_link) |
 | PLM Test Dataset     | [Download Test](https://drive.google.com/file/d/10uxsdOpAsua7uHIbWHVmsrB8Xlx23X4Y/view?usp=drive_link) |
 
-## To-Do List 
-- [ ] Release pretrained and fine-tuned TiCLS model weights
-- [x] Release pretrained PLM model weights and scripts for training 
-- [x] Release detailed dataset information for TiCLS and PLM
