@@ -394,8 +394,8 @@ class TextEvaluator():
                     else:    
                         edit_th = 1.5
                     
-                    # if match_dist < 3.5 :
-                    if match_dist < 10000:
+                    if match_dist < edit_th :
+                    # if match_dist < 10000:
                         rec_full = match_word
                         if "ctw1500" in self.dataset_name:
                             coord_str = ",".join(f"{float(x)},{float(y)}" for x, y in pts)
