@@ -77,19 +77,17 @@ We provide implementation details for training TiCLS from scratch.
 ```
 python plm_train/pretrain_LM_for_scenetext.py
 ```
-### Step 2. Detach PLM decoder for spotter initialization
+### Step 2. Detach PLM decoder for TiCLS initialization
 ```
 python plm_train/get_decoder_from_PLM.py
 ```
-### Step 3. Pretrain Spotter 
+### Step 3. Pretrain TiCLS (Spotter)
 ```
 # Before training TiCLS, please make sure to correctly place the PLM (Step 1) and its decoder weight (Step 2) under ./adet/modeling/model/language.py 
 python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 4
 ```
-### Step 4. Finetune Spotter 
+### Step 4. Finetune TiCLS (Spotter)  
 ```
 python tools/train_net.py --config-file ${CONFIG_FILE} --num-gpus 2 --eval-only MODEL.WEIGHTS ${MODEL_PATH}
 ```
-
-### Get PLM-decoder only for TiCLS
 
